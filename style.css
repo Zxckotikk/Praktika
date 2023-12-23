@@ -1,8 +1,8 @@
 .box {
-    height: 500px;
-    background-color: blue;
+    height: 1000px;
     /* display: flex; */
-    padding: 200px 100px;
+    background-color: grey;
+    padding: 200px 500px;
 }
 
 .circle {
@@ -10,9 +10,8 @@
     height: 100px;
     background-color: yellow;
     position: relative;
-
     animation-name: run-circle;
-    animation-duration: 5000ms;
+    animation-duration: 2000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -23,13 +22,18 @@
         left: 0;
     }
 
-    50% {
-        border-radius: 50%;
-        background-color: blueviolet;
+    25% {
+        left: 800px;
+        background-color: blue;
     }
 
+    50% {
+        background-color: black;
+    }
+    75%{
+        
+    }
     100% {
-        left: 1500px;
-        background-color: crimson;
+        left: 0;
     }
 }
